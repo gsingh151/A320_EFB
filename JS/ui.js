@@ -3194,6 +3194,8 @@ $(document).ready(function() {
                 case 'tab14':
                     moduleSettings.update();
                     break;
+                case 'tab46':
+                    reloadSoundsPage();
                 default:
             }
         }

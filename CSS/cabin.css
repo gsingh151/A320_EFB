@@ -1,0 +1,64 @@
+.cabin-sounds {
+    display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 100px 100px 100px;
+    grid-template-areas: 
+    "music welcome briefing doors safety"
+    "takeoff ready climb seatbelts turb"
+    ". landing after . . ";
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+    grid-gap: 30px;
+}
+
+#music {
+    grid-area: music;
+}
+
+#welcome {
+    grid-area: welcome;
+}
+
+#briefing {
+    grid-area: briefing;
+}
+
+#doors {
+    grid-area: doors;
+}
+
+#safety {
+    grid-area: safety;
+}
+
+#takeoff {
+    grid-area: takeoff;
+}
+
+#ready {
+    grid-area: ready;
+}
+
+#climb {
+    grid-area: climb;
+}
+
+#seatbelts {
+    grid-area: seatbelts;
+}
+
+#turb {
+    grid-area: turb;
+}
+
+#landing {
+    grid-area: landing;
+}
+
+#after {
+    grid-area: after;
+}
+
+
+

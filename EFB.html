@@ -35,7 +35,9 @@
         <script src="JS/browser.js"></script>
         <script src="JS/settings.js"></script>
         <script src="JS/keyboard.js"></script>
+        <script src="JS/components/annoucments.js"></script>
 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" href="CSS/style.css">
         <link rel="stylesheet" href="CSS/browser.css">
         <link rel="stylesheet" href="CSS/mcdu.css">
@@ -44,6 +46,7 @@
         <link rel="stylesheet" href="JS/listbox/listbox.css">
         <link rel="stylesheet" href="CSS/jquery-ui.min.css">
         <link rel="stylesheet" href="CSS/FAP.css">
+        <link rel="stylesheet" href="CSS/cabin.css">
     </head>
 
     <body class="">
@@ -72,20 +75,9 @@
                 <a class="item" data-tab="tab14">STATES</a>
                 <a class="item" data-tab="tab12">MAP</a>
                 <a class="item" data-tab="tab15">FAP</a>
-                <a class="item" data-tab="tab16">Annoucments</a>
+                <a class="item" data-tab="tab16" href="cabin.html">ANNOUNCEMENTS</a> 
             </div>
 
-
-            <div class="active ui bottom attached tab segment a320-tab-segment" data-tab="tab16">
-                <button>MOMO</button> 
-                <button>MOMO</button> 
-                <button>MOMO</button> 
-                <button>MOMO</button> 
-                <button>MOMO</button> 
-                <button>MOMO</button> 
-                <button>MOMO</button> 
-                <button>MOMO</button>     
-            </div>
             
 
             <div class="active ui bottom attached tab segment a320-tab-segment" data-tab="tab01">
@@ -2450,6 +2442,25 @@
                 <div id="map" style="height: 100%;"></div>
             </div>
 
+            <div class="ui bottom attached tab segment" data-tab="tab16">
+                <div class="cabin-sounds"> 
+                    <button type="button" class="cabin btn btn-primary" id="music">Boarding Music</button>
+                    <button type="button" class="cabin btn btn-primary" id="welcome">Boarding Welcome</button>
+                    <button type="button" class="cabin btn btn-primary" id="briefing">Boarding Briefing</button>
+                    <button type="button" class="cabin btn btn-primary" id="doors">Doors</button>
+                    <button type="button" class="cabin btn btn-primary" id="safety">Safety</button>
+                    <button type="button" class="cabin btn btn-primary" id="takeoff">Takeoff</button>
+                    <button type="button" class="cabin btn btn-primary" id="ready">Cabin Ready</button>
+                    <button type="button" class="cabin btn btn-primary" id="climb">Climb</button>
+                    <button type="button" class="cabin btn btn-primary" id="seatbelts">Seatbels</button>
+                    <button type="button" class="cabin btn btn-primary" id="turb">Turb</button>
+                    <button type="button" class="cabin btn btn-primary" id="landing"">Cabin Landing</button>
+                    <button type="button" class="cabin btn btn-primary" id="after">After Landing</button>
+                </div>
+
+                <div id="map" style="height: 100%;"></div>
+            </div>
+
             <div class="ui bottom attached tab segment" data-tab="tab14">
                 <div class="ui grid middle aligned">
                     <div class="three wide column"></div>
@@ -2809,6 +2820,7 @@
                     </div>
                 </div>
             </div>
+            
         </div>
 
         <div id="vKeyboardNum" class="ui-widget-content hide">
