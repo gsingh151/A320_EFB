@@ -35,7 +35,7 @@
         <script src="JS/browser.js"></script>
         <script src="JS/settings.js"></script>
         <script src="JS/keyboard.js"></script>
-        <script src="JS/components/annoucments.js"></script>
+        <script src="JS/components/annoucments.js" defer></script>
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" href="CSS/style.css">
@@ -2444,18 +2444,30 @@
 
             <div class="ui bottom attached tab segment" data-tab="tab16">
                 <div class="cabin-sounds"> 
-                    <button type="button" class="cabin btn btn-primary" id="music">Boarding Music</button>
-                    <button type="button" class="cabin btn btn-primary" id="welcome">Boarding Welcome</button>
-                    <button type="button" class="cabin btn btn-primary" id="briefing">Boarding Briefing</button>
-                    <button type="button" class="cabin btn btn-primary" id="doors">Doors</button>
-                    <button type="button" class="cabin btn btn-primary" id="safety">Safety</button>
-                    <button type="button" class="cabin btn btn-primary" id="takeoff">Takeoff</button>
-                    <button type="button" class="cabin btn btn-primary" id="ready">Cabin Ready</button>
-                    <button type="button" class="cabin btn btn-primary" id="climb">Climb</button>
-                    <button type="button" class="cabin btn btn-primary" id="seatbelts">Seatbels</button>
-                    <button type="button" class="cabin btn btn-primary" id="turb">Turb</button>
-                    <button type="button" class="cabin btn btn-primary" id="landing"">Cabin Landing</button>
-                    <button type="button" class="cabin btn btn-primary" id="after">After Landing</button>
+                    <audio id="music" src="Sounds/BOARDING.wav"></audio>
+                    <button class="cabin btn btn-primary" onclick="document.getElementById('music').play()">Boarding Music</button>
+                    <audio id="welcome" src="Sounds/WELCOME.wav"></audio>
+                    <button class="cabin btn btn-primary" onclick="document.getElementById('welcome').play()">Boarding Welcome</button>
+                    <audio id="briefing" src="Sounds/BRIEFING.wav"></audio>
+                    <button class="cabin btn btn-primary" onclick="document.getElementById('briefing').play()">Boarding Briefing</button>
+                    <audio id="doors" src="Sounds/DOORS.wav"></audio>
+                    <button class="cabin btn btn-primary" onclick="document.getElementById('doors').play()">Doors</button>
+                    <audio id="safety" src="Sounds/SAFETY.wav"></audio>
+                    <button class="cabin btn btn-primary" onclick="document.getElementById('safety').play()">Safety</button>
+                    <audio id="takeoff" src="Sounds/TAKEOFF.wav"></audio>
+                    <button class="cabin btn btn-primary" onclick="document.getElementById('takeoff').play()">Takeoff</button>
+                    <audio id="ready" src="Sounds/CABIN_SHOP.wav"></audio>
+                    <button class="cabin btn btn-primary" onclick="document.getElementById('ready').play()">Cabin Shop</button>
+                    <audio id="seatbelts" src="Sounds/SEATBELTS.wav"></audio>
+                    <button class="cabin btn btn-primary" onclick="document.getElementById('seatbelts').play()">Seatbelts</button>
+                    <audio id="turb" src="Sounds/TURB.wav"></audio>
+                    <button class="cabin btn btn-primary" onclick="document.getElementById('turb').play()">Turbulence</button>
+                    <audio id="landing" src="Sounds/LANDING.wav"></audio>
+                    <button class="cabin btn btn-primary" onclick="document.getElementById('landing').play()">Cabin Landing</button>
+                    <audio id="after" src="Sounds/AFTER.wav"></audio>
+                    <button class="cabin btn btn-primary" onclick="document.getElementById('after').play()">After Landing</button>
+
+                    <h2>Developed by Gsingh151</h2>
                 </div>
 
                 <div id="map" style="height: 100%;"></div>
