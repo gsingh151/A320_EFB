@@ -10,4 +10,4 @@ This adds on to the EFB included with the pain but adds a sense a realism with a
 
 # Installation
 
-Simply all contents into data/html of the FFA320 Folder.
+Simply drag all contents into data/html of the FFA320 Aircraft Folder.
